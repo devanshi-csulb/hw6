@@ -8,11 +8,11 @@ import { CartDetailComponent } from './cartDetail.component'
 import { CheckoutComponent } from './checkout.component'
 import { RouterModule } from '@angular/router'
 
-
+import { SearchFilter } from './search.pipe';
 
 @NgModule({
   imports: [ModelModule, BrowserModule, FormsModule, RouterModule],
-  declarations: [StoreComponent, CartSummaryComponent, CartDetailComponent, CheckoutComponent],
+  declarations: [SearchFilter, StoreComponent, CartSummaryComponent, CartDetailComponent, CheckoutComponent],
   exports: [StoreComponent, CartDetailComponent, CheckoutComponent],
 })
 export class StoreModule {}
